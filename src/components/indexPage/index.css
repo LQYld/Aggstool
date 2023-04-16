@@ -29,10 +29,16 @@ li {
   list-style: none;
 }
 
-body {
+.container-box{
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
   font-size: 14px;
   color: white;
-  background: #0F6D39;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(2px);
 }
 
 .container {
@@ -52,14 +58,26 @@ body {
   display: inline-block;
   float: left;
   margin: 7px 14px 7px 0;
+  backdrop-filter: blur(3px
+px
+);
+    background-color: rgb(255 255 255 / 10%);
+    border: 1px solid rgb(255 255 255 / 20%);
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgb(0 0 0 / 25%);
 }
 
 .module.single {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
   width: 163px;
   height: 170px;
 }
 
 .module.double {
+  display: flex;
   width: 340px;
   height: 170px;
 }
@@ -280,118 +298,6 @@ input[type=button] {
   cursor: pointer;
 }
 
-.xbox {
-  background-image: url("http://ashleyjt.net/windows/images/Xbox-360.png");
-}
-
-.bing {
-  background-image: url("http://ashleyjt.net/windows/images/Bing.png");
-}
-
-.excel {
-  background-image: url("http://ashleyjt.net/windows/images/Excel.png");
-}
-
-.hp {
-  background-image: url("http://ashleyjt.net/windows/images/HP.png");
-}
-
-.w {
-  background-image: url("http://ashleyjt.net/windows/images/w8.png");
-}
-
-.wo {
-  background-image: url("http://ashleyjt.net/windows/images/w95.png");
-}
-
-.word {
-  background-image: url("http://ashleyjt.net/windows/images/word.png");
-}
-
-.excel {
-  background-image: url("http://ashleyjt.net/windows/images/Excel.png");
-}
-
-.youtube {
-  background-image: url("http://ashleyjt.net/windows/images/youtube.png");
-}
-
-.intel {
-  background-image: url("http://ashleyjt.net/windows/images/Intel.png");
-}
-
-.fb {
-  background-image: url("http://ashleyjt.net/windows/images/fb.png");
-}
-
-.twitter {
-  background-image: url("http://ashleyjt.net/windows/images/twitter.png");
-}
-
-.mail {
-  background-image: url("http://ashleyjt.net/windows/images/Hotmail.png");
-}
-
-.market {
-  background-image: url("http://ashleyjt.net/windows/images/market.png");
-}
-
-.not {
-  background-image: url("http://ashleyjt.net/windows/images/Notifications.png");
-}
-
-.msg {
-  background-image: url("http://ashleyjt.net/windows/images/Messaging.png");
-}
-
-.msg {
-  background-image: url("http://ashleyjt.net/windows/images/Messaging.png");
-}
-
-.net {
-  background-image: url("http://ashleyjt.net/windows/images/Internet10.png");
-}
-
-.apple {
-  background-image: url("http://ashleyjt.net/windows/images/Apple.png");
-}
-
-.android {
-  background-image: url("http://ashleyjt.net/windows/images/Android.png");
-}
-
-.drop {
-  background-image: url("http://ashleyjt.net/windows/images/Dropbox.png");
-}
-
-.power {
-  background-image: url("http://ashleyjt.net/windows/images/PowerPoint.png");
-}
-
-.html {
-  background-image: url("http://ashleyjt.net/windows/images/HTML5.png");
-}
-
-.ps {
-  background-image: url("http://ashleyjt.net/windows/images/ps.png");
-}
-
-.fl {
-  background-image: url("http://ashleyjt.net/windows/images/fl.png");
-}
-
-.access {
-  background-image: url("http://ashleyjt.net/windows/images/Access.png");
-}
-
-.app {
-  background-image: url("http://ashleyjt.net/windows/images/app.png");
-}
-
-.birds {
-  background-image: url("http://ashleyjt.net/windows/images/birds.png");
-}
-
 #slider-nav {
   margin-top: 20px;
 }
@@ -454,4 +360,10 @@ footer {
   span {
     transform: translateY(20px);
   }
+}
+
+.logo-image{
+  margin: 0 auto;
+  width: 80px;
+  height: 80px;
 }
