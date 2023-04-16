@@ -1,4 +1,3 @@
-import bodyBgc from '../../public/bodyBgc.avif'
 import './globals.css'
 
 export const metadata = {
@@ -13,9 +12,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="" style={{ backgroundImage: `url('${bodyBgc.src}')` }}>
-        {children}
-      </body>
+      <body className="">{children}</body>
     </html>
   )
 }
