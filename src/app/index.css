@@ -1,0 +1,457 @@
+@import url("https://fonts.googleapis.com/css?family=Baloo+Bhaijaan&display=swap");
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+}
+
+/* .module:hover {
+  backface-visibility: hidden; -webkit-backface-visibility: hidden;
+} */
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+p>a {
+  text-decoration: none;
+  color: white;
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+body {
+  font-size: 14px;
+  color: white;
+  background: #0F6D39;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  clear: both;
+  margin: 0 auto;
+  width: 80%;
+  height: 100%;
+}
+
+.module {
+  position: relative;
+  display: inline-block;
+  float: left;
+  margin: 7px 14px 7px 0;
+}
+
+.module.single {
+  width: 163px;
+  height: 170px;
+}
+
+.module.double {
+  width: 340px;
+  height: 170px;
+}
+
+.module>div.img {
+  margin: 60px 0 10px 20px;
+  width: 75%;
+}
+
+.module>div.img>p.sub-heading {
+  margin-left: 50px;
+  width: 70%;
+  font-size: 18px;
+}
+
+.header {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+h1 {
+  float: left;
+  font-size: 45px;
+}
+
+.profile {
+  position: absolute;
+  top: 20px;
+  left: 950px;
+  float: right;
+  width: 216px;
+  height: 216px;
+  background: url("http://ashleyjt.net/windows/images/me.png") no-repeat;
+  background-size: 30%;
+}
+
+.profile p.name {
+  position: absolute;
+  top: -25px;
+  left: -65px;
+  width: 100%;
+  font-size: 24px;
+}
+
+.profile p.status {
+  position: absolute;
+  top: 20px;
+  left: -60px;
+  font-size: 13px;
+}
+
+.title {
+  position: absolute;
+  top: 125px;
+  left: 20px;
+  font-size: 14px;
+}
+
+.sub-heading {
+  padding: 10px 0 0 20px;
+  width: 65%;
+  font-size: 20px;
+}
+
+.third-heading {
+  margin-left: 130px;
+  font-size: 30px;
+}
+
+input[type=text] {
+  padding: 10px;
+  margin: 70px 0 0 20px;
+  width: 300px;
+  font-size: 16px;
+  border: 0;
+}
+
+input[type=text]:focus {
+  outline: none;
+}
+
+input[type=button] {
+  margin-left: -35px;
+  width: 27px;
+  height: 27px;
+  text-indent: -9999px;
+  background: url("http://ashleyjt.net/windows/images/search.png") no-repeat;
+  border: 0;
+}
+
+.blue {
+  background-color: #02bee1;
+}
+
+.blue:hover,
+.blue:focus {
+  z-index: 9999;
+  background-color: #017e95;
+  transition: all 200ms ease;
+  transform: scale(1.1, 1.1);
+}
+
+.green {
+  background-color: #62bc0f;
+}
+
+.green:hover,
+.green:focus {
+  z-index: 9999;
+  background-color: #3d7509;
+  transition: all 200ms ease;
+  transform: scale(1.1, 1.1);
+}
+
+.pink {
+  background-color: #d02547;
+}
+
+.pink:hover,
+.pink:focus {
+  z-index: 9999;
+  background-color: #8f1931;
+  transition: all 200ms ease;
+  transform: scale(1.1, 1.1);
+}
+
+.orange {
+  background-color: #dc6a25;
+}
+
+.orange:hover,
+.orange:focus {
+  z-index: 9999;
+  background-color: #9c4a19;
+  transition: all 200ms ease;
+  transform: scale(1.1, 1.1);
+}
+
+.yellow {
+  background-color: #dfc202;
+}
+
+.yellow:hover,
+.yellow:focus {
+  z-index: 9999;
+  background-color: #938001;
+  transition: all 200ms ease;
+  transform: scale(1.1, 1.1);
+}
+
+.darkblue {
+  background-color: #0d4b97;
+}
+
+.darkblue:hover,
+.darkblue:focus {
+  z-index: 9999;
+  background-color: #072851;
+  transition: all 200ms ease;
+  transform: scale(1.1, 1.1);
+}
+
+.midblue {
+  background-color: #3b5998;
+}
+
+.midblue:hover,
+.midblue:focus {
+  z-index: 9999;
+  background-color: #263961;
+  transition: all 200ms ease;
+  transform: scale(1.1, 1.1);
+}
+
+.red {
+  background-color: #b91d21;
+}
+
+.red:hover,
+.red:focus {
+  z-index: 9999;
+  background-color: #771315;
+  transition: all 200ms ease;
+  transform: scale(1.1, 1.1);
+}
+
+.purple {
+  background-color: #8e81a7;
+}
+
+.purple:hover,
+.purple:focus {
+  z-index: 9999;
+  background-color: #685a81;
+  transition: all 200ms ease;
+  transform: scale(1.1, 1.1);
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 20%;
+}
+
+.img.double {
+  background-position: 250px 20px;
+}
+
+.img.single {
+  background-position: center center;
+  background-size: 50%;
+}
+
+.img:hover,
+.img:focus {
+  cursor: pointer;
+}
+
+.xbox {
+  background-image: url("http://ashleyjt.net/windows/images/Xbox-360.png");
+}
+
+.bing {
+  background-image: url("http://ashleyjt.net/windows/images/Bing.png");
+}
+
+.excel {
+  background-image: url("http://ashleyjt.net/windows/images/Excel.png");
+}
+
+.hp {
+  background-image: url("http://ashleyjt.net/windows/images/HP.png");
+}
+
+.w {
+  background-image: url("http://ashleyjt.net/windows/images/w8.png");
+}
+
+.wo {
+  background-image: url("http://ashleyjt.net/windows/images/w95.png");
+}
+
+.word {
+  background-image: url("http://ashleyjt.net/windows/images/word.png");
+}
+
+.excel {
+  background-image: url("http://ashleyjt.net/windows/images/Excel.png");
+}
+
+.youtube {
+  background-image: url("http://ashleyjt.net/windows/images/youtube.png");
+}
+
+.intel {
+  background-image: url("http://ashleyjt.net/windows/images/Intel.png");
+}
+
+.fb {
+  background-image: url("http://ashleyjt.net/windows/images/fb.png");
+}
+
+.twitter {
+  background-image: url("http://ashleyjt.net/windows/images/twitter.png");
+}
+
+.mail {
+  background-image: url("http://ashleyjt.net/windows/images/Hotmail.png");
+}
+
+.market {
+  background-image: url("http://ashleyjt.net/windows/images/market.png");
+}
+
+.not {
+  background-image: url("http://ashleyjt.net/windows/images/Notifications.png");
+}
+
+.msg {
+  background-image: url("http://ashleyjt.net/windows/images/Messaging.png");
+}
+
+.msg {
+  background-image: url("http://ashleyjt.net/windows/images/Messaging.png");
+}
+
+.net {
+  background-image: url("http://ashleyjt.net/windows/images/Internet10.png");
+}
+
+.apple {
+  background-image: url("http://ashleyjt.net/windows/images/Apple.png");
+}
+
+.android {
+  background-image: url("http://ashleyjt.net/windows/images/Android.png");
+}
+
+.drop {
+  background-image: url("http://ashleyjt.net/windows/images/Dropbox.png");
+}
+
+.power {
+  background-image: url("http://ashleyjt.net/windows/images/PowerPoint.png");
+}
+
+.html {
+  background-image: url("http://ashleyjt.net/windows/images/HTML5.png");
+}
+
+.ps {
+  background-image: url("http://ashleyjt.net/windows/images/ps.png");
+}
+
+.fl {
+  background-image: url("http://ashleyjt.net/windows/images/fl.png");
+}
+
+.access {
+  background-image: url("http://ashleyjt.net/windows/images/Access.png");
+}
+
+.app {
+  background-image: url("http://ashleyjt.net/windows/images/app.png");
+}
+
+.birds {
+  background-image: url("http://ashleyjt.net/windows/images/birds.png");
+}
+
+#slider-nav {
+  margin-top: 20px;
+}
+
+button {
+  position: absolute;
+  top: 320px;
+  left: -120px;
+  width: 100px;
+  height: 100px;
+  font-size: 36px;
+  color: rgb(255 255 255 / 50%);
+  background-color: rgb(11 78 41 / 30%);
+  border: 0;
+}
+
+button:hover,
+button:focus {
+  font-size: 45px;
+  background-color: rgb(11 78 41 / 60%);
+  transition: all 200ms ease;
+  cursor: pointer;
+  transform: scale(1.1, 1.1);
+}
+
+[data-dir='next'] {
+  left: 1070px;
+}
+
+.slider {
+  overflow: hidden;
+  padding-left: 10px;
+  margin-top: 30px;
+  margin-left: -10px;
+  width: 1070px;
+  height: 547px;
+}
+
+.slider ul {
+  width: 10000px;
+}
+
+.slider li {
+  float: left;
+  width: 1070px;
+  height: 547px;
+}
+
+footer {
+  margin: 40px 0 0;
+  font-size: 12px;
+}
+
+.loading {
+  display: flex;
+  font-size: 60px;
+  font-family: "Baloo Bhaijaan", cursive;
+  color: white;
+
+  span {
+    transform: translateY(20px);
+  }
+}
