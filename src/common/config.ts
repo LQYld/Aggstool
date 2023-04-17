@@ -14,7 +14,8 @@ export const moduleConfig = [
     logo: aggsearch,
     title: 'Aggsearch',
     introduction: 'This is a product value copy',
-    value: ''
+    value: '',
+    url: 'https://aggsearch.fe-ecosphere.com/'
   },
   {
     logo: language,
