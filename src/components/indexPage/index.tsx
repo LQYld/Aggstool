@@ -2,6 +2,8 @@ import { moduleConfig } from '@/common/config'
 import bodyBgc from '../../../public/bodyBgc.avif'
 import './index.css'
 export default function IndexPageComponent() {
+  // 跳转外部链接
+  const pushWindow = (url: string) => window.open(url)
   return (
     <div
       className="container-box"
@@ -21,7 +23,10 @@ export default function IndexPageComponent() {
         <div className="slider">
           <ul className="screen">
             <li>
-              <div className="module purple double img">
+              <div
+                className="module purple double img"
+                onClick={() => pushWindow(moduleConfig[0].url)}
+              >
                 <h2 className="title">{moduleConfig[0].title}</h2>
                 <p className="sub-heading">{moduleConfig[0].introduction}</p>
                 <img
