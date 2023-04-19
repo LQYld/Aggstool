@@ -4,8 +4,8 @@ import GamesPage from './pages/games'
 export default function Home() {
   return (
     <>
-      {/* <IndexPageComponent /> */}
-      <GamesPage />
+      <IndexPageComponent />
+      {/* <GamesPage /> */}
     </>
   )
 }
