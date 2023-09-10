@@ -1,9 +1,11 @@
 # aggstool
 
 ## Example UI
+
 <p align="center">
 <img alt="Case preview" src="./public/aggstool.png">
 </p>
+
 ## Introduction
 
 Under construction...
