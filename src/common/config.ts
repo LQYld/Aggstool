@@ -74,7 +74,7 @@ export const moduleConfig = [
   {
     logo: technical,
     title: 'Ai session',
-    introduction: 'This is a product value copy',
-    value: ''
+    introduction: '基于人工智能技术的自动化客户服务',
+    value: 'https://chat-session.fe-ecosphere.com/'
   }
 ]
